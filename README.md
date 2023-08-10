@@ -1,31 +1,42 @@
-# asdfa
+# Vidya
 
 ## License
-### Public Domain
-Software with a public domain license often is open source, allowing users to adjust or build on top of the software's code to customize its use or create a new software package.
+
+### Copyleft
+
+Copyleft licenses are reciprocal or restrictive licenses, and although they're similar to an LGPL, a copyleft license has more stipulations to follow.
 
 ## Description
-sdfa
+
+Vidya is a video game search engine utilizing the RAWG and Gamerpower APIs. Search for games and save them to a list for later viewing, leave reviews for games, or find free content on Steam.
 
 ## Table of Contents
+
 - [Usage](#usage-information)
-- [Contribution](#contribution-guidlines)
+- [Contribution](#contribution-guidelines)
 - [Testing](#test-instructions)
 - [Questions](#questions)
 
 ## Installation Instructions
-sd
+
+[npm install] to install tailwind and other packages followed by [npm run dev] to update tailwind in real time
 
 ## Usage Information
-adf
+
+Usage is open source. All content is available for use by anyone.
 
 ## Contribution Guidelines
-There no guidlines to contributing to this project.
+
+Contributions are welcome but merge to master is blocked by pull request.
 
 ## Test Instructions
-asdf
+
+Testing is done in the console and in the browser
 
 ## Questions?
+
 ### You can contact me at
-- https://github.com/sdf
-- sdf
+
+- https://github.com/jsgunn22
+- j.s.gunn22@gmail.com
+- Link to video generating this README - https://drive.google.com/file/d/1zfaRE-rA0hsQHyAMYirQAk2zOnQdarwU/view

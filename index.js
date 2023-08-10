@@ -123,7 +123,7 @@ function init() {
       `# ${a.projectName}` +
         `\n\n## License\n${licDesc}` +
         `\n\n## Description\n${a.description}` +
-        `\n\n## Table of Contents\n- [Usage](#usage-information)\n- [Contribution](#contribution-guidlines)\n- [Testing](#test-instructions)\n- [Questions](#questions)` +
+        `\n\n## Table of Contents\n- [Usage](#usage-information)\n- [Contribution](#contribution-guidelines)\n- [Testing](#test-instructions)\n- [Questions](#questions)` +
         `\n\n## Installation Instructions\n${a.installation}` +
         `\n\n## Usage Information\n${a.usage}` +
         `${contBool}` +
