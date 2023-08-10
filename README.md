@@ -1,30 +1,31 @@
-# Vidya
+# asdfa
 
 ## License
-### Copyleft
-Copyleft licenses are reciprocal or restrictive licenses, and although they're similar to an LGPL, a copyleft license has more stipulations to follow.
+### Public Domain
+Software with a public domain license often is open source, allowing users to adjust or build on top of the software's code to customize its use or create a new software package.
 
 ## Description
-A search engine for finding video games and free content on steam 
+sdfa
 
 ## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
+- [Usage](#usage-information)
+- [Contribution](#contribution-guidlines)
+- [Testing](#test-instructions)
+- [Questions](#questions)
 
 ## Installation Instructions
-install node and tailwind css
+sd
 
 ## Usage Information
-Styles are set in js with tailwind css.  You will need to run dev to update new styles to tailwind.css
+adf
 
 ## Contribution Guidelines
-Contributions are welcome.  Merges are blocked by pull request
+There no guidlines to contributing to this project.
 
 ## Test Instructions
-tests are run in the console 
+asdf
 
 ## Questions?
 ### You can contact me at
-- https://github.com/jsgunn22
-- j.s.gunn22@gmail.com
+- https://github.com/sdf
+- sdf
