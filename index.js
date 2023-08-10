@@ -75,7 +75,7 @@ function init() {
     let printOrder = [
       `# ${a.projectName}\n`,
       `## Descrition\n${a.description}\n\n- ${a.motivation}\n- ${a.why}\n- ${a.whatProblem}\n- ${a.learned}`,
-      `\n## Table of Contents\n[Installation](#installation)\n[Usage](#usage)\n[Credits](#credits)\n[License]('#license)\n`,
+      `\n## Table of Contents\n- [Installation](#installation)\n- [Usage](#usage)\n- [Credits](#credits)\n- [License]('#license)\n`,
       `## Installation\n${a.installation}`,
       `## Usage\n${a.usage}`,
       `## Credits\n${a.credits}`,

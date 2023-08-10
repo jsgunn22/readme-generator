@@ -1,24 +1,5 @@
-# asdfa qe
-
-## Descrition
-qw qe  434 f4
-
-- fq3fqfqerver
-- ergergqerg
-- gergwerg
-- ergwerg
-
-## Table of Contents
-[Installation](#installation)
-[Usage](#usage)
-[Credits](#credits)
-[License]('#license)
+# Vidya
 
 ## License
-erg
-## Installation
-ergergerg
-## Credits
-wergerg
-## Usage
-werg
+### GNU Lesser General
+This type of license is similar to public domain licenses but is more restrictive because it may have certain conditions for intellectual property protection.
