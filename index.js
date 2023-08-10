@@ -2,14 +2,12 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 
-let prompt = inquirer.createPromptModule();
-
 // TODO: Create an array of questions for user input
 const questions = [
   {
     type: "input",
     name: "projectName",
-    message: "What is the name of your project?",
+    message: "What is the name of this project?",
   },
   {
     type: "input",
@@ -18,28 +16,8 @@ const questions = [
   },
   {
     type: "input",
-    name: "motivation",
-    message: "What was your motivation for this project?",
-  },
-  {
-    type: "input",
-    name: "why",
-    message: "Why did you build the project?",
-  },
-  {
-    type: "input",
-    name: "whatProblem",
-    message: "What problem did it solve?",
-  },
-  {
-    type: "input",
-    name: "learned",
-    message: "What did you learn?",
-  },
-  {
-    type: "input",
     name: "installation",
-    message: "What are the steps required to install this project?",
+    message: "What steps are necessary to install this project?",
   },
   {
     type: "input",
@@ -47,45 +25,114 @@ const questions = [
     message: "Provide instructions for use.",
   },
   {
-    type: "input",
-    name: "credits",
-    message: "List all collaborators and their contributions to this project.",
+    type: "confirm",
+    name: "contGuide",
+    message: "Are there guidelines for contributing?",
   },
   {
     type: "input",
-    name: "license",
-    message: "What is this projects license status?",
+    name: "contDescription",
+    message:
+      "Describe the guidelines for contributing.  If none press Enter/Return.",
   },
+  {
+    type: "input",
+    name: "testInst",
+    message: "What are the instructions for testing this project?",
+  },
+  {
+    type: "list",
+    name: "license",
+    message: "What license does your project have?",
+    choices: [
+      "No License",
+      "Public Domain",
+      "GNU Lesser General",
+      "Permissive",
+      "Copyleft",
+      "Proprietary",
+    ],
+  },
+  {
+    type: "input",
+    name: "github",
+    message: "What is your Github user handle?",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "What is your email address?",
+  },
+];
+
+const licenseDesciptions = [
+  "Software with a public domain license often is open source, allowing users to adjust or build on top of the software's code to customize its use or create a new software package.",
+  "The LPGL is an offshoot of the GNU General Public License (GPL) that allows developers to use open-source libraries within the code of their software without releasing the source code they used to create their components.",
+  "This type of license is similar to public domain licenses but is more restrictive because it may have certain conditions for intellectual property protection.",
+  "Copyleft licenses are reciprocal or restrictive licenses, and although they're similar to an LGPL, a copyleft license has more stipulations to follow.",
+  "A proprietary license model is based on the concept that the software company creates software and maintains control over its code, and therefore, its features and use.",
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-  fs.appendFile("README.md", `${data}\n`, (err) =>
+  // fs to write file so file gets overridden
+  fs.writeFile("README.md", `${data}\n`, (err) =>
     err ? console.log(err) : console.log()
   );
 }
 
 // TODO: Create a function to initialize app
 function init() {
-  let answers = () => prompt(questions).then((answers) => answers);
+  let answers = () => inquirer.prompt(questions).then((response) => response);
 
-  async function printData() {
-    const dataObject = await answers();
-    let a = dataObject;
-    let printOrder = [
-      `# ${a.projectName}\n`,
-      `## Descrition\n${a.description}\n\n- ${a.motivation}\n- ${a.why}\n- ${a.whatProblem}\n- ${a.learned}`,
-      `\n## Table of Contents\n- [Installation](#installation)\n- [Usage](#usage)\n- [Credits](#credits)\n- [License]('#license)\n`,
-      `## Installation\n${a.installation}`,
-      `## Usage\n${a.usage}`,
-      `## Credits\n${a.credits}`,
-      `## License\n${a.license}`,
-    ];
+  async function print() {
+    const a = await answers();
 
-    printOrder.forEach((p) => writeToFile(p));
+    // license description logic
+    let licChoice = questions[7].choices;
+    let licDesc;
+    switch (a.license) {
+      case licChoice[1]:
+        licDesc = `### ${a.license}\n${licenseDesciptions[0]}`;
+        break;
+      case licChoice[2]:
+        licDesc = `### ${a.license}\n${licenseDesciptions[1]}`;
+        break;
+      case licChoice[3]:
+        licDesc = `### ${a.license}\n${licenseDesciptions[2]}`;
+        break;
+      case licChoice[4]:
+        licDesc = `### ${a.license}\n${licenseDesciptions[3]}`;
+        break;
+      case licChoice[5]:
+        licDesc = `### ${a.license}\n${licenseDesciptions[4]}`;
+        break;
+      default:
+        licDesc = `\nNo licence on this project`;
+        break;
+    }
+
+    // Contributions logic
+    let contBool;
+    a.contGuide
+      ? (contBool = `\n\n## Contribution Guidelines\n${a.contDescription}`)
+      : (contBool = `\n\n## Contribution Guidelines\nThere no guidlines to contributing to this project.`);
+
+    // prints readme
+    writeToFile(
+      `# ${a.projectName}` +
+        `\n\n## License\n${licDesc}` +
+        `\n\n## Description\n${a.description}` +
+        `\n\n## Table of Contents\n- [Installation](#installation)\n- [Usage](#usage)\n- [Credits](#credits)` +
+        `\n\n## Installation Instructions\n${a.installation}` +
+        `\n\n## Usage Information\n${a.usage}` +
+        `${contBool}` +
+        `\n\n## Test Instructions\n${a.testInst}` +
+        `\n\n## Questions?\n### You can contact me at\n- https://github.com/${a.github}\n- ${a.email}`
+    );
   }
 
-  printData();
+  print();
 }
 
 // Function call to initialize app
