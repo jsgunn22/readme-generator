@@ -72,10 +72,10 @@ const licenseBadges = [
   `[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`,
 ];
 const licenseDesciptions = [
-  "Software with a public domain license often is open source, allowing users to adjust or build on top of the software's code to customize its use or create a new software package.",
-  "The LPGL is an offshoot of the GNU General Public License (GPL) that allows developers to use open-source libraries within the code of their software without releasing the source code they used to create their components.",
-  "This type of license is similar to public domain licenses but is more restrictive because it may have certain conditions for intellectual property protection.",
-  "Copyleft licenses are reciprocal or restrictive licenses, and although they're similar to an LGPL, a copyleft license has more stipulations to follow.",
+  "The Apache License is a permissive free software license written by the Apache Software Foundation (ASF). It allows users to use the software for any purpose, to distribute it, to modify it, and to distribute modified versions of the software under the terms of the license, without concern for royalties.",
+  'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.',
+  "THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+  "THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
   "THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICENSE (“AGREEMENT”). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT’S ACCEPTANCE OF THIS AGREEMENT.",
 ];
 
@@ -99,19 +99,19 @@ function init() {
     let licDesc;
     switch (a.license) {
       case licChoice[1]:
-        licDesc = `### ${licenseBadge[0]}\n${licenseDesciptions[0]}`;
+        licDesc = `### ${licenseBadges[0]}\n${licenseDesciptions[0]}`;
         break;
       case licChoice[2]:
-        licDesc = `### ${licenseBadge[1]}\n${licenseDesciptions[1]}`;
+        licDesc = `### ${licenseBadges[1]}\n${licenseDesciptions[1]}`;
         break;
       case licChoice[3]:
-        licDesc = `### ${licenseBadge[2]}\n${licenseDesciptions[2]}`;
+        licDesc = `### ${licenseBadges[2]}\n${licenseDesciptions[2]}`;
         break;
       case licChoice[4]:
-        licDesc = `### ${licenseBadge[3]}\n${licenseDesciptions[3]}`;
+        licDesc = `### ${licenseBadges[3]}\n${licenseDesciptions[3]}`;
         break;
       case licChoice[5]:
-        licDesc = `### ${licenseBadge[4]}\n${licenseDesciptions[4]}`;
+        licDesc = `### ${licenseBadges[4]}\n${licenseDesciptions[4]}`;
         break;
       default:
         licDesc = `\nNo licence on this project`;

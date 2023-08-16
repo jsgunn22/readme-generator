@@ -2,9 +2,9 @@
 
 ## License
 
-### Copyleft
+### [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
-Copyleft licenses are reciprocal or restrictive licenses, and although they're similar to an LGPL, a copyleft license has more stipulations to follow.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Description
 
@@ -39,4 +39,4 @@ Testing is done in the console and in the browser
 
 - https://github.com/jsgunn22
 - j.s.gunn22@gmail.com
-- Link to video generating this README - https://drive.google.com/file/d/1zfaRE-rA0hsQHyAMYirQAk2zOnQdarwU/view
+- [Video Walkthrough](https://drive.google.com/file/d/11vsURIiYje-RExtfh-lKfsbedy5yQj6d/view)
