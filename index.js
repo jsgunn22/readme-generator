@@ -46,11 +46,11 @@ const questions = [
     message: "What license does your project have?",
     choices: [
       "No License",
-      "Public Domain",
-      "GNU Lesser General",
-      "Permissive",
-      "Copyleft",
-      "Proprietary",
+      "Apache 2.0 License",
+      "Boost Software License 1.0",
+      "BSD 3-Clause License",
+      "BSD 3-Clause License",
+      "Eclipse Public License 1.0",
     ],
   },
   {
@@ -64,13 +64,19 @@ const questions = [
     message: "What is your email address?",
   },
 ];
-
+const licenseBadges = [
+  `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`,
+  `[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`,
+  `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`,
+  `[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)`,
+  `[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`,
+];
 const licenseDesciptions = [
   "Software with a public domain license often is open source, allowing users to adjust or build on top of the software's code to customize its use or create a new software package.",
   "The LPGL is an offshoot of the GNU General Public License (GPL) that allows developers to use open-source libraries within the code of their software without releasing the source code they used to create their components.",
   "This type of license is similar to public domain licenses but is more restrictive because it may have certain conditions for intellectual property protection.",
   "Copyleft licenses are reciprocal or restrictive licenses, and although they're similar to an LGPL, a copyleft license has more stipulations to follow.",
-  "A proprietary license model is based on the concept that the software company creates software and maintains control over its code, and therefore, its features and use.",
+  "THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICENSE (“AGREEMENT”). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT’S ACCEPTANCE OF THIS AGREEMENT.",
 ];
 
 // TODO: Create a function to write README file
@@ -93,19 +99,19 @@ function init() {
     let licDesc;
     switch (a.license) {
       case licChoice[1]:
-        licDesc = `### ${a.license}\n${licenseDesciptions[0]}`;
+        licDesc = `### ${licenseBadge[0]}\n${licenseDesciptions[0]}`;
         break;
       case licChoice[2]:
-        licDesc = `### ${a.license}\n${licenseDesciptions[1]}`;
+        licDesc = `### ${licenseBadge[1]}\n${licenseDesciptions[1]}`;
         break;
       case licChoice[3]:
-        licDesc = `### ${a.license}\n${licenseDesciptions[2]}`;
+        licDesc = `### ${licenseBadge[2]}\n${licenseDesciptions[2]}`;
         break;
       case licChoice[4]:
-        licDesc = `### ${a.license}\n${licenseDesciptions[3]}`;
+        licDesc = `### ${licenseBadge[3]}\n${licenseDesciptions[3]}`;
         break;
       case licChoice[5]:
-        licDesc = `### ${a.license}\n${licenseDesciptions[4]}`;
+        licDesc = `### ${licenseBadge[4]}\n${licenseDesciptions[4]}`;
         break;
       default:
         licDesc = `\nNo licence on this project`;
