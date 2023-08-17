@@ -1,42 +1,23 @@
-# Vidya
+# Readme Generator
+
+An application used to generate a README.md based on certain questions promtped to the user.
+
+## Installation
+
+User and contributors will need to install `inquirer v8.2.4`
+
+## Usage
+
+User runs `node index.js` from the terminal and is prompted for answers that will display in the README.
+
+## Contributing
+
+Contributions are welcome. Please utilize Pull Requests before merging to master.
 
 ## License
 
-### [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+No license information for this repo
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+## Assets
 
-## Description
-
-Vidya is a video game search engine utilizing the RAWG and Gamerpower APIs. Search for games and save them to a list for later viewing, leave reviews for games, or find free content on Steam.
-
-## Table of Contents
-
-- [Usage](#usage-information)
-- [Contribution](#contribution-guidelines)
-- [Testing](#test-instructions)
-- [Questions](#questions)
-
-## Installation Instructions
-
-[npm install] to install tailwind and other packages followed by [npm run dev] to update tailwind in real time
-
-## Usage Information
-
-Usage is open source. All content is available for use by anyone.
-
-## Contribution Guidelines
-
-Contributions are welcome but merge to master is blocked by pull request.
-
-## Test Instructions
-
-Testing is done in the console and in the browser
-
-## Questions?
-
-### You can contact me at
-
-- https://github.com/jsgunn22
-- j.s.gunn22@gmail.com
-- [Video Walkthrough](https://drive.google.com/file/d/11vsURIiYje-RExtfh-lKfsbedy5yQj6d/view)
+[Video Walkthrough](https://drive.google.com/file/d/11vsURIiYje-RExtfh-lKfsbedy5yQj6d/view)
